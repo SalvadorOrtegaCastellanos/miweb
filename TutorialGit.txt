@@ -1,0 +1,21 @@
+git -version
+$$$$$$$$$$$$$$$$$$$$$$$
+git config --global user.name "Salvador Ortega"
+git config --global user.email tailmon28@yahoo.com.mx
+git config --global core.editor "code --wait"
+git config --global -e /* Mostrará la configuración en VS Code */
+//El siguiente es dependiendo del sistema operativo para eliminar el comando de espacio CR, Windows=true, Linux/Mac=input
+git config --global core.autocrlf true
+
+//lo tipico de entre carpetas comandos ls, mkdir etc.
+//luego cuando vayamos a trabajar en una carpeta lo iniciamos
+git init
+//vital para ver la condicion en que se encuentra nuestro repositorio y archivos
+git status
+//finalmente empezamos con la primera fase phase con el comando add
+//con el comando se usa: 1.-especifico: archivo1.txt 2.-archivos en conjunto: *.txt
+//WARNING 3.-todo el directorio:   .
+add archivo1.txt
+//luego de que verifiquemos que esté correcto a los archivos a comprometer
+//Iremos a la siguiente fase Commit
+git commit -m "Commit inicial"
