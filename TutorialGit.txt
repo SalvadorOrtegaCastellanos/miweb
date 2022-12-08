@@ -19,3 +19,5 @@ add archivo1.txt
 //luego de que verifiquemos que esté correcto a los archivos a comprometer
 //Iremos a la siguiente fase Commit
 git commit -m "Commit inicial"
+//Ahora borraremos un archivo con rm
+git rm Archivo1.txt
