@@ -24,4 +24,5 @@ git rm Archivo1.txt
 //Si cambiamos de opinion y queremos revertir los cambios sobre enviar add
 git restore --staged archivo1.txt
 //Si queremos restaurar los valores que habiamos tenido antes de hacer commit
+//Es decir restauramos lo que habiamos modificado
 git restore Archivo1.txt
