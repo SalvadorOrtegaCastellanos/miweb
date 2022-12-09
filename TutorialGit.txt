@@ -21,3 +21,7 @@ add archivo1.txt
 git commit -m "Commit inicial"
 //Ahora borraremos un archivo con rm
 git rm Archivo1.txt
+//Si cambiamos de opinion y queremos revertir los cambios sobre enviar add
+git restore --staged archivo1.txt
+//Si queremos restaurar los valores que habiamos tenido antes de hacer commit
+git restore Archivo1.txt
