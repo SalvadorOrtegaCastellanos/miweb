@@ -30,3 +30,14 @@ git restore Archivo1.txt
 mv Archivo1.txt archivo.txt
 //Atención, lo siguiente es afectar a los 2 nombres del archivo del local y del repo
 git add Archivo1.txt archivo.txt
+
+//El siguiente método es ignorar ciertos archivos para no afectar nuestro repo
+//Creamos un archivo que se llame .gitignore
+//Hacemos de cierta manera manejar cierta información sensible de nuestra propiedad ej. Password, Username
+//Agregamos el nombre de esos archivos dentro de .gitignore  como algo así:
+.env
+node_modules/
+
+git status
+git add .gitignore
+git commit -m "Agregar archivo gitignore"
