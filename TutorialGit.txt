@@ -26,3 +26,7 @@ git restore --staged archivo1.txt
 //Si queremos restaurar los valores que habiamos tenido antes de hacer commit
 //Es decir restauramos lo que habiamos modificado
 git restore Archivo1.txt
+//Lo siguiente es modificar el nombre del archivo
+mv Archivo1.txt archivo.txt
+//Atención, lo siguiente es afectar a los 2 nombres del archivo del local y del repo
+git add Archivo1.txt archivo.txt
