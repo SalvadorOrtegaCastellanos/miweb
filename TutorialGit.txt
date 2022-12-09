@@ -41,3 +41,6 @@ node_modules/
 git status
 git add .gitignore
 git commit -m "Agregar archivo gitignore"
+
+//!!!Si quieres tener mejor confidencialidad en tu entorno de trabajo puedes escribir
+git status -s
