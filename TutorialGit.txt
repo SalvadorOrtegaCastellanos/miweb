@@ -52,3 +52,28 @@ git diff --staged
 
 //Para mostrar el LOG corto necesitamos escribir
 git log --oneline
+
+//Ahora viene lo mejor y es las branch, podemos trabajar en nuestra propia rama
+//Ahi no afectamos a la rama principal, master o main
+//Creamos nuestra rama:
+git checkout -b nombreDeLaRama
+
+//Ahora obsevemos que nos cambiamos a una nueva rama, ahora lo veremos
+git branch
+//Todos los cambios se reflejarán solo en esa nueva branch, hacemos cambios y guardamos
+//Ahora una mirada del contenido rapido del archivo
+cat archivo.txt
+//Regresamos a la rama principal y observamos que el archivo no sufrió ningun cambio
+git checkout master
+cat archivo.txt
+//Ahora TRAEREMOS LOS CAMBIOS de la ramaB a la Rama master donde nos encontramos
+git merge ramaB
+cat archivo.txt
+//Observamos que se actualiza la rama principal
+
+//Ahora a trabajar con la nube de GitHub
+//Nos creamos una cuenta o nos logueamos en GitHub y luego creamos un repositorio
+//Hacemos el enlace para trabajar en la nube sobre que origen pertenece
+git remote add origin https://github.com/SalvadorOrtegaCastellanos/miweb.git
+//Siguiente nos creamos la rama principal en que trabajar en la nube (same name)
+git push -u origin master
